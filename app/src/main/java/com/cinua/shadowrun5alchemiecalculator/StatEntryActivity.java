@@ -69,14 +69,11 @@ public class StatEntryActivity extends AppCompatActivity{
         Button saveInternallyButton = findViewById(R.id.remember_button);
         saveInternallyButton.setOnClickListener(new SaveInternallyButtonHandler());
 
-        askForStoragePermission();
-        /*if(!askForStoragePermission()){
-            loadButton.setEnabled(false);
-            saveButton.setEnabled(false);
-        }*/
 
         Button continueButton = findViewById(R.id.continue_button);
         continueButton.setOnClickListener(new ContinueButtonHandler());
+        
+        askForStoragePermission();
         try{
             if(Arrays.asList(fileList()).contains(Savefile.FILE_NAME)){
                 loadStatsFromSavefile(Savefile.loadFromInternalFile(this, Savefile.FILE_NAME));
