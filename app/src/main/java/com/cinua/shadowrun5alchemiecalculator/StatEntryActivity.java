@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.core.app.ActivityCompat;
 import com.example.shadowrun5alchemiecalculator.R;
-
 import java.io.IOException;
 import java.util.Arrays;
 
@@ -54,6 +53,7 @@ public class StatEntryActivity extends AppCompatActivity{
         TextView drainPoolLabel = drainPoolLayout.findViewById(R.id.section_title);
         drainPoolLabel.setText(R.string.drain_pool);
         drainPoolTextbox = drainPoolLayout.findViewById(R.id.section_input);
+        drainPoolTextbox.setHint(R.string.drain_pool_formula);
 
         LinearLayout stateMonitorLayout = findViewById(R.id.state_monitor_section);
         TextView stateMonitorlabel = stateMonitorLayout.findViewById(R.id.section_title);

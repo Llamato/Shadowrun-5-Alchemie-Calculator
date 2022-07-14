@@ -43,4 +43,5 @@
     <string name="edged">Edged</string>
     <string name="not_edgy_enough">Nicht Edgy genug</string>
     <string name="save_externally_button_caption">Werte in Datei schreiben</string>
+    <string name="drain_pool_formula">WIL+LOG</string>
 </resources>

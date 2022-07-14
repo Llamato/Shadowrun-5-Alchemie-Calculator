@@ -54,4 +54,5 @@
     <string name="save_internally_button_caption">Remember stats</string>
     <string name="continue_button_caption">Continue</string>
     <string name="stats_saved">Stats saved</string>
+    <string name="drain_pool_formula">WIL+LOG</string>
 </resources>
