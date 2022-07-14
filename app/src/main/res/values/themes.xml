@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Shadowrun5AlchemieCalculator" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/chummer_dark_green</item>
+        <item name="colorPrimaryVariant">@color/chummer_green</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/chummer_green</item>
+        <item name="colorSecondaryVariant">@color/chummer_dark_green</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+
+        <!-- Chummer customisations -->
+        <item name="android:textColor">#000000</item>
+        <!--<item name="android:textSize">12sp</item>-->
+    </style>
+    <style name="Theme.Shadowrun5AlchemieCalculator.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Shadowrun5AlchemieCalculator.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.Shadowrun5AlchemieCalculator.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+</resources>

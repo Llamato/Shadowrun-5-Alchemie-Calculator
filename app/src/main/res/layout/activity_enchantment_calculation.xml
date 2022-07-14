@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context="com.cinua.shadowrun5alchemiecalculator.EnchantmentCalculationActivity">
+
+    <TextView
+        android:id="@+id/character_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:text="@string/character"
+        android:layout_margin="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/entry_section" android:id="@+id/mental_damage_section" />
+            <LinearLayout
+                android:id="@+id/foldable_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/entry_section" android:id="@+id/skill_boni_mali_section" />
+                <include layout="@layout/entry_section" android:id="@+id/drain_pool_boni_mali_section" />
+                <include layout="@layout/selection_section" android:id="@+id/trigger_section" />
+
+                <TextView
+                    android:id="@+id/spell_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/spell" />
+
+                <include layout="@layout/entry_section" android:id="@+id/spell_power_section" />
+                <include layout="@layout/entry_section" android:id="@+id/spell_drain_section"/>
+            </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <Button
+                        android:id="@+id/enchant_button"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:text="@string/enchant" />
+
+                <ImageButton
+                        android:id="@+id/fold_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_arrow_upward_25"
+                        android:layout_margin="5dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/enchant_button"
+                        app:layout_constraintEnd_toEndOf="@+id/edge_button" />
+
+                <Button
+                        android:id="@+id/edge_button"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:text="@string/edge" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/card_list"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                tools:itemCount="20"
+                tools:listitem="@layout/enchantment_result_card" />
+</LinearLayout>

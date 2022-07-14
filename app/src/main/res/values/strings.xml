@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Shadowrun 5 Alchemie Calculator</string>
+
+    <!-- Errors -->
+    <string name="alert_title">Something went wrong</string>
+    <string name="io_error_alert_content">An unknown input/output error occurred.</string>
+    <string name="unknown_error_message">An unknown error occurred</string>
+
+    <!-- Main activity -->
+    <string name="alchemie">Alchemie</string>
+    <string name="character">Character</string>
+    <string name="mental_damage">Stun Damage</string>
+    <string name="skill_boni_mali">Skill Boni/Mali</string>
+    <string name="drain_pool_boni_mali">DrainPool Boni/Mali</string>
+    <string name="invalid_entry">Invalid entry</string>
+    <string name="spell">Spell</string>
+
+    <string name="trigger">Trigger</string>
+    <string name="touch">Touch</string>
+    <string name="command">Command</string>
+    <string name="timer">Timer</string>
+
+    <string name="spell_description">Spell description</string>
+    <string name="power_level">Force</string>
+    <string name="spell_drain">Spell drain</string>
+    <string name="enchant">Enchant</string>
+
+    <!-- Why???? -->
+    <string name="edge">Edge it Baby</string>
+    <string name="edged">Edged</string>
+    <string name="not_edgy_enough">Not edgy enough</string>
+
+    <!--Enchantment result card-->
+    <string name="drain">Drain</string>
+    <string name="potency">Potency</string>
+    <string name="drain_resisted">Drain resisted</string>
+    <string name="successes">Successes</string>
+    <string name="perpetration_successes">Perpetration successes</string>
+    <string name="enchantment_failed">Enchantment failed</string>
+    <string name="success">Success</string>
+    <string name="fail">Fail</string>
+    <string name="critical_fail">Critical fail</string>
+
+    <!--Stat entry activity -->
+    <string name="stat_entry_promt">Please fill out the form so we can help you enchant things</string>
+    <string name="character_name">Character name</string>
+    <string name="magic">Magic</string>
+    <string name="skill">Skill</string>
+    <string name="drain_pool">Drain-Pool</string>
+    <string name="state_monitor">State monitor</string>
+    <string name="load_button_caption">load stats from file</string>
+    <string name="import_file_chooser_title">Choose a file</string>
+    <string name="save_externally_button_caption">save stats to file</string>
+    <string name="save_internally_button_caption">Remember stats</string>
+    <string name="continue_button_caption">Continue</string>
+    <string name="stats_saved">Stats saved</string>
+</resources>

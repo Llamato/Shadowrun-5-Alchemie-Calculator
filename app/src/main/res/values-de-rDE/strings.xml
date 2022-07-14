@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Shadowrun 5 Alchemie Calculator</string>
+    <string name="mental_damage">Geistiger Schaden</string>
+    <string name="skill_boni_mali">Skill Boni/Mali</string>
+    <string name="drain_pool_boni_mali">DrainPool Boni/Mali</string>
+    <string name="trigger">Trigger</string>
+    <string name="touch">Berührung</string>
+    <string name="command">Befehl</string>
+    <string name="timer">Timer</string>
+    <string name="spell_description">Zauberbeschreibung</string>
+    <string name="power_level">Kraftstufe</string>
+    <string name="spell_drain">Zauberentzug</string>
+    <string name="enchant">Verzaubern</string>
+    <string name="edge">Edge it Baby</string>
+    <string name="character">Charakter</string>
+    <string name="drain">Entzug</string>
+    <string name="enchantment_failed">Verzauberung fehlgeschlagen</string>
+    <string name="drain_resisted">Enzug Widerstanden</string>
+    <string name="successes">Erfolge</string>
+    <string name="perpetration_successes">Präperaterfolge</string>
+    <string name="character_name">Charakter Name</string>
+    <string name="stat_entry_promt">Bitte fülle die das Formula aus damit wir dir beim verzaubern helfen können</string>
+    <string name="magic">Magie</string>
+    <string name="skill">Können</string>
+    <string name="drain_pool">Drain-Pool</string>
+    <string name="state_monitor">Zustandsmonitor</string>
+    <string name="continue_button_caption">Weiter</string>
+    <string name="invalid_entry">Ungültige Eingabe</string>
+    <string name="spell">Zauber</string>
+    <string name="alchemie">Alchemie</string>
+    <string name="load_button_caption">Werte aus Datei laden</string>
+    <string name="save_internally_button_caption">Werte merken</string>
+    <string name="import_file_chooser_title">Datei auswählen</string>
+    <string name="alert_title">Etwas ist schief gelaufen</string>
+    <string name="io_error_alert_content">Ein unbekannter Eingabe / Ausgabe fehler ist aufgetreten</string>
+    <string name="unknown_error_message">Ein unbekannter Fehler ist aufgetreten</string>
+    <string name="stats_saved">Werte gespeichert</string>
+    <string name="potency">Potenz</string>
+    <string name="success">Erfolg</string>
+    <string name="fail">Glitch</string>
+    <string name="critical_fail">Kritischer Glitch</string>
+    <string name="edged">Edged</string>
+    <string name="not_edgy_enough">Nicht Edgy genug</string>
+    <string name="save_externally_button_caption">Werte in Datei schreiben</string>
+</resources>

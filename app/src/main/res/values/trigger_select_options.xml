@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="trigger_select_options">
+        <item>@string/touch</item>
+        <item>@string/command</item>
+        <item>@string/timer</item>
+    </string-array>
+</resources>
