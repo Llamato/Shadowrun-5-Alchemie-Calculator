@@ -22,7 +22,7 @@
     <string name="character_name">Charakter Name</string>
     <string name="stat_entry_promt">Bitte fülle die das Formula aus damit wir dir beim verzaubern helfen können</string>
     <string name="magic">Magie</string>
-    <string name="skill">Können</string>
+    <string name="skill">Alchemie</string>
     <string name="drain_pool">Drain-Pool</string>
     <string name="state_monitor">Zustandsmonitor</string>
     <string name="continue_button_caption">Weiter</string>

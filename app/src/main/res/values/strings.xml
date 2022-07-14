@@ -45,7 +45,7 @@
     <string name="stat_entry_promt">Please fill out the form so we can help you enchant things</string>
     <string name="character_name">Character name</string>
     <string name="magic">Magic</string>
-    <string name="skill">Skill</string>
+    <string name="skill">Alchemy</string>
     <string name="drain_pool">Drain-Pool</string>
     <string name="state_monitor">State monitor</string>
     <string name="load_button_caption">load stats from file</string>

@@ -12,8 +12,8 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 
 public class EnchantmentResultCardAdapter extends RecyclerView.Adapter<EnchantmentResultCardViewHolder>{
-    private Context context;
-    private ArrayList<EnchantmentResultCard> cards;
+    private final Context context;
+    private final ArrayList<EnchantmentResultCard> cards;
     private OnItemBoundListener onItemBoundListener;
 
     public EnchantmentResultCardAdapter(Context context, ArrayList<EnchantmentResultCard> cards){
@@ -45,6 +45,8 @@ public class EnchantmentResultCardAdapter extends RecyclerView.Adapter<Enchantme
         holder.drainLabel.setText(card.getDrainString());
         if(card.isEdged()){
             holder.edgedLabel.setVisibility(View.VISIBLE);
+        }else{
+            holder.edgedLabel.setVisibility(View.INVISIBLE);
         }
         if(card.isNotEdgy()){
             holder.edgedLabel.setText(R.string.not_edgy_enough);

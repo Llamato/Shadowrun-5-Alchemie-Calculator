@@ -13,19 +13,18 @@ public class EnchantmentResultCard{
     public static final int CRITICAL_FAIL = 3;
     public static final int SUCCESS = 4;
 
-    private Context context;
+    private final Context context;
 
-    private int spellPowerLevel;
-    private int spellDrain;
-    private int triggerMalus;
+    private final int spellPowerLevel;
+    private final int spellDrain;
+    private final int triggerMalus;
 
-    private int drainPool;
-    private int magicRating;
-    private int alchemyRating;
-    private int mentalDamage;
+    private final int drainPool;
+    private final int magicRating;
+    private final int alchemyRating;
+    private final int mentalDamage;
 
     private long successThrows;
-    private long failThrows;
     private long counterSuccesses;
     private long drainRollSuccesses;
     private int result = NO_RESULT;
@@ -98,7 +97,7 @@ public class EnchantmentResultCard{
         return mentalDamage + getDrain();
     }
 
-    public String getDrainString(){;
+    public String getDrainString(){
         return String.format("%s: %d (%d %s)", context.getString(R.string.drain), getDrain(), drainRollSuccesses, context.getString(R.string.drain_resisted));
     }
 
@@ -117,12 +116,12 @@ public class EnchantmentResultCard{
             return context.getString(R.string.success);
         }
         diceCount = magicRating + alchemyRating - (int) Math.ceil(getMentalDamage() / 3f);
-        if (diceCount < 0) { //Did Maya do that???? Is this my math being wrong?
+        if(diceCount < 0){
             diceCount = 0;
         }
         int[] throwResults = Dice.roll(Dice.D6, diceCount);
         successThrows = Dice.getSuccesses(throwResults);
-        failThrows = Dice.getFails(throwResults);
+        long failThrows = Dice.getFails(throwResults);
         counterSuccesses = getCounterSuccesses();
         drainRollSuccesses = getSuccessfulDrainRolls();
         if(failThrows >= Math.ceil(magicRating + alchemyRating) / 2){
